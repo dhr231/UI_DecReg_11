@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent > p {
+            color: red;
+            font-size: 24px;
+        }
+        #parent + h2 {
+            color: blue;
+        }
+        #parent ~ h2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Combinators</h1>
+
+    <div id="parent">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptate quis quod illum cum provident iste eligendi recusandae earum illo aut ipsam voluptatibus, vitae corrupti ipsum hic facere, atque deleniti?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed voluptatem dolores vero excepturi, et id! Dicta unde et incidunt nobis alias, perspiciatis dolor cumque blanditiis quidem ab placeat neque?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic beatae molestiae, veritatis nisi error et cumque non accusantium officiis quisquam omnis minus inventore dolorum autem voluptates maxime nesciunt animi sint!
+        </p>
+        <div class="child">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium fugiat laudantium reprehenderit itaque temporibus id aliquam, ipsam facere aspernatur earum magni? Iusto exercitationem aspernatur, necessitatibus at blanditiis ratione recusandae.
+            </p>
+        </div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum sint eveniet quidem! Reprehenderit assumenda voluptatum magnam ab in quasi! Cum at asperiores aspernatur beatae quis totam minus delectus autem voluptate?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus obcaecati excepturi voluptate totam nobis quia exercitationem, quisquam consectetur incidunt maiores harum eligendi nesciunt earum. Vero nisi porro qui nam!
+        </p>
+    </div>
+    <hr>
+    <h2>This heading is outside div</h2>
+    <h2>This heading is outside div</h2>
+    <div>
+        <h2>This heading is outside div</h2>
+    </div>
+    
+</body>
+</html>

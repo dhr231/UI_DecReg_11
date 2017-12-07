@@ -1,0 +1,29 @@
+body {
+    background-image: url("http://st3.cricketcountry.com/wp-content/uploads/2013/12/Indian-captain-MS-Dhoni-plays-a-shot-during-the-2nd-ODI-ma1.jpg");
+    background-size: 100% 100%;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 400px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("../../images/WebImages/20130904171031-cute-kung-fu-panda-2-desktop.jpg");
+}
+#div_2 {
+    background-image: url("../../images/WebImages/avengers-thor.jpg");
+}
+#div_3 {
+    background-image: url("../../images/WebImages/the-joker-black-white.jpeg");
+}
+#div_4 {
+    background-image: url("../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg");
+}
+#div_5 {
+    background-image: url("../../images/WebImages/batman_arkham_knight-1366x768.jpg");
+}
