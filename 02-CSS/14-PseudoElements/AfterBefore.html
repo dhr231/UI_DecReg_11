@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        h1::before {
+            content: "";
+            border: 2px solid blue;
+            position: absolute;
+            width: 40%;
+            left: 0px;
+            top: 37px;
+        }
+        h1::after {
+            content: "";
+            border: 2px solid blue;
+            position: absolute;
+            width: 40%;
+            right: 0px;
+            top: 37px;
+        }
+        div {
+            height: 300px;
+            width: 300px;
+            border: 30px solid blue;
+            border-color: blue yellow green orange;
+        }
+        div:after {
+            content: "";
+            border: 80px solid blue;
+            position: absolute;
+            left: 400px;
+            /* border-color: blue yellow green orange; */
+            border-color: blue transparent transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>After Before</h1>
+
+    <div></div>
+    
+</body>
+</html>
