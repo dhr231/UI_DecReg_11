@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div_1, #div_2, #div_3, #div_4 {
+            height: 500px;
+        }
+        #form {
+            display: none;
+            position: absolute;
+            top: 100px;
+        }
+        #form:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Target</h1>
+
+    <a href="#div_1">Main</a>
+    <a href="#div_2">Gallery</a>
+    <a href="#div_3">About Us</a>
+    <a href="#div_4">Contact Us</a>
+    
+    <a href="#form">Login</a>
+    <a href="#SignIn">SignIn</a>
+
+
+    <div id="div_1">
+        <h2>Main Section</h2>
+    </div>
+    <div id="div_2">
+        <h2>Gallery</h2>
+        <img src="../../images/00-22.gif" alt="">
+    </div>
+    <div id="div_3">
+        <h2>About Us</h2>
+    </div>
+    <div id="div_4">
+        <h2>Contact Us</h2>
+    </div>
+
+    <div id="form">
+        <form action="#">
+            Enter Name <input type="text">
+            Enter Password <input type="password">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    
+</body>
+</html>
