@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#mainBg {
+    height: 600px;
+    background-image: url('image_2.jpg');
+    background-size: 100% 100%;
+    transform: scale(2.5,2.5);
+    transition-duration: 30s;
+}
+
+#jet {
+    background-image: url('image_1.png');
+    height: 150px;
+    width: 300px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    transform: scale(0.01,0.01) rotate(0deg);
+    transition-duration: 20s;
+}
+
+#mainBg:hover + #jet{
+    transform: scale(2,2) translate(-100px, 100px) rotate(480deg);
+}
+
+#mainBg:hover {
+    transform: scale(1,1);
+}
