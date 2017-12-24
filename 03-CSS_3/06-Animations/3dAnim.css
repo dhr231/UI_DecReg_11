@@ -1,0 +1,55 @@
+body {
+    overflow: hidden;
+    margin: 0px;
+}
+#container {
+    background-image: url("https://i.ytimg.com/vi/BWxMuQre3R8/maxresdefault.jpg");
+    background-size: 100% 100%;
+    height: 600px;
+    position: relative;
+    z-index: -1;
+}
+
+#earth {
+    background-image: url("http://bestanimations.com/Earth&Space/Earth/earth-spinning-rotating-animation-24.gif");
+    height: 300px;
+    width: 300px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px -150px 0px;
+    z-index: 2;
+}
+
+#rocket {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    background-image: url("http://www.gifs-paradise.com/animations/animated-gifs-ufos-020.gif");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 800px;
+    animation: anim_1 10s infinite linear;
+    z-index: 10;
+}
+
+@keyframes anim_1 {
+    0% {
+        /* transform: rotateY(0deg); */
+        background-position: left center;
+    }
+    50% {
+        /* transform: rotateY(360deg); */
+        background-position: right center;
+        z-index: 10;
+    }
+    51% {
+        z-index: -1;
+    }
+    100% {
+        z-index: -1;
+        background-position: left center;
+    }
+}
