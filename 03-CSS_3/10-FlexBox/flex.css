@@ -1,0 +1,36 @@
+#parent {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    /* align-items: stretch; */
+    /* align-items: flex-end; */
+}
+
+#parent .col{
+    background-color: lightcoral;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 0px 10px 10px;
+    width: 28%;
+}
+
+/* #parent .col-1 {
+    width: 15%;
+}
+
+#parent .col-2 {
+    width: 35%;
+}
+
+#parent .col-3 {
+    width: 15%;
+} */
+
+#parent .col-2 {
+    background-color: lightgreen;
+}
