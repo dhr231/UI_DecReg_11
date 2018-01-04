@@ -1,0 +1,88 @@
+console.log("Hello")
+VM710:1 Hello
+undefined
+a = 10;
+10
+b = 12;
+12
+a = "Hello"
+"Hello"
+typeof(a)
+"string"
+typeof(b)
+"number"
+a = 10.5;
+10.5
+typeof(a)
+"number"
+typeof(Number)
+"function"
+a+b
+22.5
+a-b
+-1.5
+a/b
+0.875
+a*b
+126
+a = "12"
+"12"
+b = 12
+12
+a+b;
+"1212"
+c = 10
+10
+a+b+c
+"121210"
+b+c+a
+"2212"
+a == b
+true
+a === b
+false
+var a = 10;
+undefined
+a = 10
+10
+var a = "Hello";
+undefined
+a
+"Hello"
+console.log(a)
+VM898:1 Hello
+undefined
+function add(){}
+undefined
+function add(){
+x = 11;
+y = 12;
+console.log("Addition is",x+y)
+}
+undefined
+add()
+VM943:4 Addition is 23
+undefined
+x-y
+-1
+function add(){
+var x1 = 11;
+var y1 = 12;
+console.log("Addition is",x1+y1);
+}
+undefined
+add()
+VM977:4 Addition is 23
+undefined
+x1
+VM993:1 Uncaught ReferenceError: x1 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM993:1
+function add(){
+var x1 = 11;
+var y1 = 12;
+return x1 + y1;
+}
+undefined
+add()
+23
