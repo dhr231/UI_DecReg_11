@@ -28,3 +28,6 @@ input[type="range"]::-webkit-slider-runnable-track {
     background: #367ebd;
   } */
   
+  #songList a {
+    text-transform: capitalize;
+  }
