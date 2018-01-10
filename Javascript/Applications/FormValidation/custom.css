@@ -1,0 +1,7 @@
+/* ::-moz-placeholder, ::-webkit-placeholder {
+    color: red;
+} */
+
+::-webkit-input-placeholder {
+    color: red;
+}
