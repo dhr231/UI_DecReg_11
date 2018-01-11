@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Prompt Box</h1>
+    <button onclick="func_1()">Click Here</button>
+    
+    <script>
+        function func_1(){
+            var a = prompt("Enter first number",0);
+            var b = prompt("Enter second number",0);
+            var result = parseInt(a) + parseInt(b);
+            if(result){
+                alert(result);
+            }
+            else {
+                alert("Type a number");
+                func_1();
+            }
+        }
+    </script>
+</body>
+</html>

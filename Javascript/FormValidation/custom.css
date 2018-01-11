@@ -1,0 +1,31 @@
+/* ::-moz-placeholder, ::-webkit-placeholder {
+    color: red;
+} */
+
+::-webkit-input-placeholder {
+    color: red;
+}
+
+#image {
+    width: 20%;
+    display: none;
+}
+
+#pwdStrength {
+    height: 30px;
+    width: 0px;
+    display: block;
+    transition: 1s;
+}
+#pwdStrength.weak {
+    background-color: red;
+    width: 30px;
+}
+#pwdStrength.average {
+    background-color: yellow;
+    width: 50px;
+}
+#pwdStrength.strong {
+    background-color: green;
+    width: 70px;
+}
