@@ -1,0 +1,132 @@
+obj = {
+"id" : 101,
+"name" : "Ram",
+"age" : 25
+}
+{id: 101, name: "Ram", age: 25}age: 25id: 101name: "Ram"__proto__: constructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+obj.id
+101
+obj.name
+"Ram"
+obj
+{id: 101, name: "Ram", age: 25}age: 25id: 101name: "Ram"__proto__: constructor: ƒ Object()arguments: (...)assign: ƒ assign()caller: (...)create: ƒ create()defineProperties: ƒ defineProperties()defineProperty: ƒ defineProperty()entries: ƒ entries()freeze: ƒ freeze()getOwnPropertyDescriptor: ƒ getOwnPropertyDescriptor()getOwnPropertyDescriptors: ƒ getOwnPropertyDescriptors()getOwnPropertyNames: ƒ getOwnPropertyNames()getOwnPropertySymbols: ƒ getOwnPropertySymbols()getPrototypeOf: ƒ getPrototypeOf()is: ƒ is()isExtensible: ƒ isExtensible()isFrozen: ƒ isFrozen()isSealed: ƒ isSealed()keys: ƒ keys()length: 1name: "Object"preventExtensions: ƒ preventExtensions()prototype: {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}seal: ƒ seal()setPrototypeOf: ƒ setPrototypeOf()values: ƒ values()__proto__: ƒ ()[[Scopes]]: Scopes[0]hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()arguments: (...)caller: (...)length: 1name: "isPrototypeOf"__proto__: ƒ ()[[Scopes]]: Scopes[0]propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+obj.constructor
+ƒ Object() { [native code] }
+obj.age = 29
+29
+obj
+{id: 101, name: "Ram", age: 29}
+obj.salary
+undefined
+obj
+{id: 101, name: "Ram", age: 29}
+obj.salary = 25000
+25000
+obj
+{id: 101, name: "Ram", age: 29, salary: 25000}
+const obj = {
+	"age" : 25
+}
+undefined
+obj
+{age: 25}
+obj.age
+25
+obj.age = 29
+29
+obj
+{age: 29}
+obj.name = "Ram"
+"Ram"
+obj
+{age: 29, name: "Ram"}
+function Emp(id,name,age){
+	this.id = id;
+	this.name = name;
+	this.age = age;
+}
+undefined
+var ram = new Emp(101,'Ram',22)
+undefined
+ram
+Emp {id: 101, name: "Ram", age: 22}age: 22id: 101name: "Ram"__proto__: Object
+obj = Emp()
+VM1726:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:5
+(anonymous) @ VM1726:1
+var shyam = new Emp(102,'Shyam',23)
+undefined
+shyam
+Emp {id: 102, name: "Shyam", age: 23}
+shyam.salary = 22000
+22000
+shyam
+Emp {id: 102, name: "Shyam", age: 23, salary: 22000}
+ram
+Emp {id: 101, name: "Ram", age: 22}
+Object.create
+ƒ create() { [native code] }
+ravi = Object.create()
+VM1816:1 Uncaught TypeError: Object prototype may only be an Object or null: undefined
+    at Function.create (<anonymous>)
+    at <anonymous>:1:15
+(anonymous) @ VM1816:1
+Object.create()
+VM1818:1 Uncaught TypeError: Object prototype may only be an Object or null: undefined
+    at Function.create (<anonymous>)
+    at <anonymous>:1:8
+(anonymous) @ VM1818:1
+Object.create(Emp)
+Function {}
+ravi = Object.create(Emp)
+Function {}
+ravi
+Function {}__proto__: ƒ Emp(id,name,age)arguments: nullcaller: nulllength: 3name: "Emp"prototype: {constructor: ƒ}__proto__: ƒ ()[[FunctionLocation]]: VM1676:1[[Scopes]]: Scopes[2]
+ravi()
+VM1868:1 Uncaught TypeError: ravi is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM1868:1
+typeof(ravi)
+"object"
+ravi.id = 103
+103
+ravi.name = 'Ravi'
+"Ravi"
+ravi
+Function {id: 103}id: 103__proto__: ƒ Emp(id,name,age)
+ravi.name = 'Ravi'
+"Ravi"
+ravi
+Function {id: 103}id: 103__proto__: ƒ Emp(id,name,age)
+var obj = {
+"id" : 101,
+"name" : "Ram",
+"bio" : function(){
+		console.log("Hello "+name);
+	}
+}
+VM2055:1 Uncaught SyntaxError: Identifier 'obj' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM2055:1
+var obj_1 = {
+"id" : 101,
+"name" : "Ram",
+"bio" : function(){
+		console.log("Hello "+name);
+	}
+}
+undefined
+obj_1.bio()
+VM2056:5 Hello undefined
+undefined
+var obj_1 = {
+"id" : 101,
+"name" : "Ram",
+"bio" : function(){
+		console.log("Hello "+this.name);
+	}
+}
+undefined
+obj_1.bio()
+VM2090:5 Hello Ram
+undefined

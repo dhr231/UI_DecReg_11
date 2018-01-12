@@ -1,0 +1,122 @@
+function outer(x){
+	y = 10;
+	function inner(){
+		console.log(x+y)
+	}
+}
+undefined
+outer(15)
+undefined
+inner()
+VM973:1 Uncaught ReferenceError: inner is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM973:1
+outer(15)()
+VM996:1 Uncaught TypeError: outer(...) is not a function
+    at <anonymous>:1:10
+(anonymous) @ VM996:1
+function outer(x){
+	y = 10;
+	function inner(){
+		console.log(x+y)
+	}
+inner()
+}
+undefined
+outer(15)
+VM1010:4 25
+undefined
+function outer(x){
+	y = 10;
+	function inner(){
+		console.log(x+y)
+	}
+return inner
+}
+undefined
+outer(15)
+ƒ inner(){
+		console.log(x+y)
+	}
+outer(15)()
+VM1042:4 25
+undefined
+x = outer(15);
+ƒ inner(){
+		console.log(x+y)
+	}
+typeof(x)
+"function"
+x()
+VM1042:4 25
+undefined
+x()
+VM1042:4 25
+undefined
+x()
+VM1042:4 25
+undefined
+function outer(x){
+	function inner(){
+		return x += 1;
+	}
+return inner
+}
+undefined
+x = outer(10)
+ƒ inner(){
+		return x += 1;
+	}
+x()
+11
+x()
+12
+x()
+13
+function outer(x){
+	return function(){
+		return x += 1;
+	}
+}
+undefined
+outer()
+ƒ (){
+		return x += 1;
+	}
+function(){
+	console.log("Function called...")
+}
+VM1234:1 Uncaught SyntaxError: Unexpected token (
+function(){
+	console.log("Function called...")
+}()
+VM1240:1 Uncaught SyntaxError: Unexpected token (
+x = function(){
+	console.log("Function called...")
+}()
+VM1244:2 Function called...
+undefined
+x
+undefined
+x()
+VM1254:1 Uncaught TypeError: x is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM1254:1
+(function(){
+	console.log("Function called...")
+})()
+VM1260:2 Function called...
+undefined
+x = (function(){
+	console.log("Function called...")
+})()
+VM1264:2 Function called...
+undefined
+x
+undefined
+x
+undefined
+x()
+VM1278:1 Uncaught TypeError: x is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM1278:1

@@ -1,0 +1,280 @@
+function add(){
+	var x = 12;
+	var y = 14;
+	console.log(x+y);
+}
+undefined
+add()
+VM215:4 26
+undefined
+let a = 12
+undefined
+function add(){
+	let x = 12;
+	let y = 14;
+	console.log(x+y);
+}
+undefined
+add()
+VM265:4 26
+undefined
+x
+VM279:1 Uncaught ReferenceError: x is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM279:1
+y
+VM283:1 Uncaught ReferenceError: y is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM283:1
+let a = 15;
+VM291:1 Uncaught SyntaxError: Identifier 'a' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM291:1
+var x = 11
+undefined
+var x = 15
+undefined
+function add(){
+	var x = 12;
+	console.log(x);
+	if(x == 12){
+		var x = 15;
+		console.log(x);
+	}
+	console.log(x);
+}
+undefined
+add()
+VM413:3 12
+VM413:6 15
+VM413:8 15
+undefined
+function add(){
+	var x = 12;
+	console.log(x);
+	if(x == 12){
+		x = 15;
+		console.log(x);
+	}
+	console.log(x);
+}
+undefined
+add()
+VM430:3 12
+VM430:6 15
+VM430:8 15
+undefined
+x
+15
+function add(){
+	let x = 12;
+	console.log(x);
+	if(x == 12){
+		let x = 15;
+		console.log(x);
+	}
+	console.log(x);
+}
+undefined
+add()
+VM462:3 12
+VM462:6 15
+VM462:8 12
+undefined
+function add(){
+	let x = 12;
+	console.log(x);
+	if(x == 12){
+		x = 15;
+		console.log(x);
+	}
+	console.log(x);
+}
+undefined
+add()
+VM479:3 12
+VM479:6 15
+VM479:8 15
+undefined
+x
+15
+function add(){
+	let x = 12;
+	console.log(x);
+	if(x == 12){
+		x = 15;
+		console.log(x);
+	}
+	console.log(x);
+	let x = 20;
+}
+undefined
+add()
+VM501:9 Uncaught SyntaxError: Identifier 'x' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM511:1
+function add(){
+	x = 12;
+	console.log(x);
+	if(x == 12){
+		var x = 15;
+		console.log(x);
+	}
+	console.log(x);
+}
+undefined
+add()
+VM524:3 12
+VM524:6 15
+VM524:8 15
+undefined
+x
+15
+function add(){
+	y = 12;
+	console.log(y);
+	if(y == 12){
+		var y = 15;
+		console.log(y);
+	}
+	console.log(y);
+}
+undefined
+add()
+VM570:3 12
+VM570:6 15
+VM570:8 15
+undefined
+y
+VM584:1 Uncaught ReferenceError: y is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM584:1
+function add(){
+	y = 12;
+	console.log(y);
+}
+undefined
+add()
+VM598:3 12
+undefined
+y
+12
+function add(){
+	y = 12;
+	console.log(y);
+	var y = 15;
+	console.log(y);
+}
+undefined
+add()
+VM624:3 12
+VM624:5 15
+undefined
+y
+12
+function add(){
+	i = 12;
+	console.log(i);
+	var i = 15;
+	console.log(i);
+}
+undefined
+add()
+VM652:3 12
+VM652:5 15
+undefined
+i
+VM666:1 Uncaught ReferenceError: i is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM666:1
+function add(){
+	i = 12;
+	console.log(i);
+	let i = 15;
+	console.log(i);
+}
+undefined
+add()
+VM678:2 Uncaught ReferenceError: i is not defined
+    at add (<anonymous>:2:4)
+    at <anonymous>:1:1
+add @ VM678:2
+(anonymous) @ VM688:1
+function add(){
+	b = 12;
+	let b = 15;
+	console.log(i);
+}
+undefined
+add()
+VM694:2 Uncaught ReferenceError: b is not defined
+    at add (<anonymous>:2:4)
+    at <anonymous>:1:1
+add @ VM694:2
+(anonymous) @ VM704:1
+function add(){
+	i = 12;
+	console.log(i);
+	var i = 15;
+	console.log(i);
+}
+undefined
+add()
+VM716:3 12
+VM716:5 15
+undefined
+d = "Hello"
+"Hello"
+var d = "Bye"
+undefined
+e = "Hi"
+"Hi"
+let e = "Bye"
+undefined
+e
+"Bye"
+var d = 11
+undefined
+var d = 12
+undefined
+let x = 11
+VM812:1 Uncaught SyntaxError: Identifier 'x' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM812:1
+let x1 = 11
+undefined
+let x1 = 12
+VM832:1 Uncaught SyntaxError: Identifier 'x1' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM832:1
+var x1 = 15
+VM840:1 Uncaught SyntaxError: Identifier 'x1' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM840:1
+let d = 20
+undefined
+const d = 25
+VM860:1 Uncaught SyntaxError: Identifier 'd' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM860:1
+const d1 = 15
+undefined
+function add(){
+	const y = 12;
+	console.log(y);
+	if(y == 12){
+		y = 15;
+		console.log(y);
+	}
+	console.log(y);
+}
+undefined
+add()
+VM887:3 12
+VM887:5 Uncaught TypeError: Assignment to constant variable.
+    at add (<anonymous>:5:5)
+    at <anonymous>:1:1
+add @ VM887:5
+(anonymous) @ VM897:1
+y
+12
