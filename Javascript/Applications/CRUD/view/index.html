@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet/custom.css">
+    <script src="../model/product.js"></script>
+    <script src="../model/productObject.js"></script>
+    <script src="../controller/controller.js"></script>
+</head>
+<body>
+
+    <div class="container-fluid">
+    <h1>CRUD App</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+                <table class="form-group">
+                        <tr>
+                            <td>Enter Name</td>
+                            <td>
+                                <input class="form-control" type="text" id="box_1" placeholder="Enter name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Enter Price</td>
+                            <td>
+                                <input class="form-control" type="text" id="box_2" placeholder="Enter Price">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Enter Decription</td>
+                            <td>
+                                <textarea placeholder="Enter Description" class="form-control" id="box_3" cols="0" rows="0"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button id="create">Create</button>
+                                <button id="read">Read</button>
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                                <button id="sort">Sort</button>
+                            </td>
+                        </tr>
+                    </table>
+        </div>
+        <div class="col-md-6">
+            <div class="output">
+                <ul id="itemList" class="list-group">
+                    <!-- <li id="itemList"></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+</html>
