@@ -1,0 +1,30 @@
+productObject.js:9 Array(6)
+productObject.js:9 Array(6)
+productObject.js:9 Array(6)
+productObject.js:9 Array(6)
+productObject.js:9 Array(6)
+productObject.js:9 Array(6)
+obj.productList
+(6) [Product, Product, Product, Product, Product, Product]
+var data = obj.productList
+undefined
+var json = JSON.stringify(data)
+undefined
+json
+"[{"id":1,"name":"Redmi","price":"15000","desc":"Note 4","selected":false},{"id":2,"name":"Redmi","price":"15000","desc":"Note 4","selected":false},{"id":3,"name":"Redmi","price":"15000","desc":"Note 4","selected":false},{"id":4,"name":"Redmi","price":"15000","desc":"Note 4","selected":false},{"id":5,"name":"Redmi","price":"15000","desc":"Note 4","selected":false},{"id":6,"name":"Redmi","price":"15000","desc":"Note 4","selected":false}]"
+localStorage.setItem('data',json)
+undefined
+localStorage.data
+"[{"id":1,"name":"Redmi","price":"15000","desc":"Note 4","selected":false},{"id":2,"name":"Redmi","price":"15000","desc":"Note 4","selected":false},{"id":3,"name":"Redmi","price":"15000","desc":"Note 4","selected":false},{"id":4,"name":"Redmi","price":"15000","desc":"Note 4","selected":false},{"id":5,"name":"Redmi","price":"15000","desc":"Note 4","selected":false},{"id":6,"name":"Redmi","price":"15000","desc":"Note 4","selected":false}]"
+var data_1 = localStorage.data
+undefined
+var js_obj = JSON.parse(data_1)
+undefined
+js_obj
+(6) [{…}, {…}, {…}, {…}, {…}, {…}]
+type(data_!)
+VM412:1 Uncaught SyntaxError: missing ) after argument list
+typeof(data_1)
+"string"
+js_obj[0]
+{id: 1, name: "Redmi", price: "15000", desc: "Note 4", selected: false}
