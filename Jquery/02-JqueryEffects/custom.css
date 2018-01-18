@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+}
+#header {
+    background-color: lightgray;
+    border: 2px solid red;
+    text-align: center;
+}
+#header.active {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
+    animation: header_anim 0.5s linear;
+}
+@keyframes header_anim {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#section_1 {
+    padding-top: 220px;
+}
