@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Jquery DOM</h1>
+
+    <div id="parent">
+        <h2>This is inside parent</h2>
+        <div class="child">
+            <h2>This is inside child</h2>
+            <div class="grandchild">
+                <h2>This is inside grandchild</h2>
+                <a href="#">Link_1</a><br><br>
+                <img src="../../images/00-22.gif" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script>
+        $("a").click(function(){
+            // $(this).parent(".grandchild").css('border','1px solid red');
+            // $(this).parents().fadeOut(1000);
+            // $(this).parentsUntil('.child').fadeOut(1000);
+            $(this).closest('div').fadeOut(1000);
+            // var x = $(this).closest();
+            // console.log(x);
+        })
+    </script>
+</body>
+</html>

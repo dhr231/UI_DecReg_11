@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>AJAX Demo</h1>
+
+    <button onclick="ajaxCall()">Load Data</button>
+    <div id="result">
+
+    </div>
+
+    <script>
+        function ajaxCall(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                console.log(xhttp.readyState);
+                if(xhttp.readyState == 4 && xhttp.status == 200) {
+                    // document.getElementById("result").innerHTML = this.responseText;
+                    var json = this.responseText;
+                    var data = JSON.parse(json);
+                    document.getElementById("result").innerHTML = data.id + " " + data.Name + " " + data.Occupation;
+                }
+            }
+            // xhttp.open('get', 'data.html');
+            // xhttp.open('get', 'demo.xml');
+            xhttp.open('get', 'data.json');
+            xhttp.send();
+        }
+/*
+ readyState	Holds the status of the XMLHttpRequest.
+ 0: request not initialized
+ 1: server connection established
+ 2: request received
+ 3: processing request
+ 4: request finished and response is ready
+
+ status	Returns the status-number of a request
+ 200: "OK"
+ 403: "Forbidden"
+ 404: "Not Found"
+ */
+    </script>
+</body>
+</html>
